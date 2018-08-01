@@ -1,14 +1,14 @@
-bootdo:
+yunbang:
   uploadPath: D:/var/uploaded_files/
 logging:
   level:
     root: info
-    com.bootdo: debug
+    com.yunbang: debug
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/bootdo?useUnicode=true&characterEncoding=utf8&useSSL=false
+    url: jdbc:mysql://127.0.0.1:3306/yunbang?useUnicode=true&characterEncoding=utf8&useSSL=false
     username: root
     password: root
     initialSize: 1

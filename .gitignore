@@ -36,6 +36,7 @@ cmake-build-release/
 ## File-based project format:
 *.iml
 *.iws
+*-pro.yml
 
 ## Plugin-specific files:
 
