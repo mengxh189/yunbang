@@ -4,7 +4,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 @Component
-@ConfigurationProperties(prefix="bootdo")
+@ConfigurationProperties(prefix="yunbang")
 public class BootdoConfig {
 	//上传路径
 	private String uploadPath;
