@@ -18,7 +18,7 @@ public class YunBangApplication {
     private static final Logger LOGGER = LoggerFactory.getLogger(YunBangApplication.class);
     public static void main(String[] args) {
         SpringApplication.run(YunBangApplication.class, args);
-        LOGGER.info("YunBang Service starded");
+        LOGGER.info("YunBang Service stard");
         float freeMemory = Runtime.getRuntime().freeMemory();
         float totalMemory = Runtime.getRuntime().totalMemory();
         float usedMemory = totalMemory - freeMemory;

@@ -8,6 +8,6 @@ public class SwaggerController {
 
     @RequestMapping(value = "/swagger")
     String swagger(){
-        return "direct:swagger-ui.html";
+        return "redirect:swagger-ui.html";
     }
 }

@@ -1,5 +1,4 @@
-/*
-package com.bootdo;
+package com.yunbang;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -16,26 +15,24 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 public class YunbangSwagger {
 
-    @Bean
-    Docket producDocket() {
+//    @Bean
+    public Docket producDocket() {
         return new Docket(DocumentationType.SWAGGER_2).genericModelSubstitutes(DeferredResult.class)
-                .useDefaultResponseMessages(false)
-                .forCodeGeneration(false)
-                .pathMapping("/")
+//                .useDefaultResponseMessages(false)
+//                .forCodeGeneration(false)
+//                .pathMapping("/")
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.bootdo"))//扫描com路径下的api文档
+                .apis(RequestHandlerSelectors.basePackage("com.yunbang"))//扫描com路径下的api文档
                 .paths(PathSelectors.any())//路径判断
                 .build()
                 .apiInfo(apiInfo());
     }
 
     ApiInfo apiInfo() {
-        return new ApiInfoBuilder()
-                .title("Swagger 开发规范")//标题
+        return new ApiInfoBuilder().title("Swagger 开发规范")//标题
                 .description("Saggger 开发规范详文档细地址--->>>>>>>：http://www.google.com.hk")//描述
                 .termsOfServiceUrl("http://www.google.com.hk")//（不可见）条款地址
                 .version("6.6.6")//版本号
                 .build();
     }
 }
-*/
